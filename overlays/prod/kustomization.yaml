@@ -1,7 +1,7 @@
 bases:
   - ../../base
 
-namespace: devpilot-prod
+namespace: devpilot
 
 images:
   - name: vkflco08/devpilot
