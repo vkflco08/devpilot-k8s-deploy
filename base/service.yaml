@@ -5,7 +5,7 @@ metadata:
   namespace: devpilot
 spec:
   selector:
-    app: devpilot
+    app: devpilot-app
   ports:
     - protocol: TCP
       port: 80

@@ -5,12 +5,12 @@ namespace: devpilot
 
 images:
   - name: vkflco08/devpilot
-    newTag: build-35-20250507101143
+    newTag: build-3-20250523085604
 
 # ArgoCD Image Updater 설정
 metadata:
   annotations:
     argocd-image-updater.argoproj.io/image-list: "vkflco08/devpilot"
-    argocd-image-updater.argoproj.io/vkflco08.memo-app.update-strategy: "latest"
+    argocd-image-updater.argoproj.io/vkflco08.devpilot.update-strategy: "latest"
     argocd-image-updater.argoproj.io/write-back-method: "git"
     argocd-image-updater.argoproj.io/git-branch: "main"
