@@ -5,7 +5,7 @@ namespace: devpilot
 
 images:
   - name: vkflco08/devpilot
-    newTag: build-13-20250604083125
+    newTag: build-14-20250605074630
 
 # ArgoCD Image Updater 설정
 metadata:
