@@ -1,0 +1,11 @@
+# JetBrains IDE (IntelliJ, PyCharm, etc.)
+# .idea/ 를 통째로 무시하므로 내부 파일을 개별적으로 지정할 필요가 없습니다.
+/.idea/
+/shelf/
+
+# Editor-based HTTP Client requests
+/httpRequests/
+
+# Datasource local storage
+/dataSources/
+/dataSources.local.xml

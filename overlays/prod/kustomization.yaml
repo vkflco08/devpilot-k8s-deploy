@@ -1,16 +1,8 @@
-bases:
-  - ../../base
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
 
 namespace: devpilot
 
-images:
-  - name: vkflco08/devpilot
-    newTag: build-6-20250524021518
-
-# ArgoCD Image Updater 설정
-metadata:
-  annotations:
-    argocd-image-updater.argoproj.io/image-list: "vkflco08/devpilot"
-    argocd-image-updater.argoproj.io/vkflco08.devpilot.update-strategy: "latest"
-    argocd-image-updater.argoproj.io/write-back-method: "git"
-    argocd-image-updater.argoproj.io/git-branch: "main"
+resources:
+  - ./backend
+  - ./agent
