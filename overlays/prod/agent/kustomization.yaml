@@ -13,7 +13,7 @@ images:
   # 2. 이미지 이름과 태그를 모두 교체
   - name: vkflco08/devpilot      # base에 정의된 원래 이름
     newName: vkflco08/devpilot-agent # 새로 사용할 에이전트 이미지 이름
-    newTag: build-2-agent      # Jenkins가 이 부분을 수정
+    newTag: build-2-20250722083605
 
 patches:
   - path: env-patch.yaml
