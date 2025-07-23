@@ -6,7 +6,7 @@ spec:
   template:
     spec:
       containers:
-        - name: devpilot-container # base의 컨테이너 이름과 일치해야 함
+        - name: devpilot-app # base의 컨테이너 이름과 일치해야 함
           env:
             - name: OPENAI_API_KEY
               valueFrom:
