@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devpilot-backend-app
+spec:
+  revisionHistoryLimit: 5
+  replicas: 2
+  selector:
+    matchLabels:
+      app: devpilot-backend-app
+  template:
+    metadata:
+      labels:
+        app: devpilot-backend-app
+    spec:
+      containers:
+        - name: devpilot-backend-container # 컨테이너 이름 명시
+          image: "vkflco08/devpilot:latest"
+          ports:
+            - containerPort: 8182

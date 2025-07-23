@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devpilot-agent-app
+spec:
+  revisionHistoryLimit: 5
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devpilot-agent-app
+  template:
+    metadata:
+      labels:
+        app: devpilot-agent-app
+    spec:
+      containers:
+        - name: devpilot-agent-container
+          image: "vkflco08/devpilot-agent:latest"
+          ports:
+            - containerPort: 8000
+          env:
+            - name: OPENAI_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: openai-secret
+                  key: OPENAI_API_KEY
+            - name: SPRING_BACKEND_URL
+              value: "http://devpilot-backend-service:8182"
