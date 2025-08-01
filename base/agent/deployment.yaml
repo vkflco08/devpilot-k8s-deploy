@@ -26,3 +26,8 @@ spec:
                   key: OPENAI_API_KEY
             - name: SPRING_BACKEND_URL
               value: "http://devpilot-backend-service:8182"
+            - name: DATABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: devpilot-db-secret
+                  key: DATABASE_URL
