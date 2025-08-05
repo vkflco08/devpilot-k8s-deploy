@@ -31,3 +31,8 @@ spec:
                 secretKeyRef:
                   name: devpilot-db-secret
                   key: DATABASE_URL
+            - name: DEVPILOT_FRONT_URL
+              valueFrom:
+                secretKeyRef:
+                  name: devpilot-db-secret
+                  key: DEVPILOT_FRONT_URL
