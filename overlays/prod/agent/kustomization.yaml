@@ -6,4 +6,4 @@ resources:
 
 images:
   - name: vkflco08/devpilot-agent # base/agent/deployment.yaml에 있는 이미지 이름
-    newTag: build-8-20250805052826
+    newTag: build-9-20250805055126
