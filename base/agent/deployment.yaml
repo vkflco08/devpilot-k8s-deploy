@@ -25,7 +25,10 @@ spec:
                   name: openai-secret
                   key: OPENAI_API_KEY
             - name: SPRING_BACKEND_URL
-              value: "http://devpilot-backend-service:8182"
+              valueFrom:
+                secretKeyRef:
+                  name: devpilot-db-secret
+                  key: SPRING_BACKEND_URL
             - name: DATABASE_URL
               valueFrom:
                 secretKeyRef:
