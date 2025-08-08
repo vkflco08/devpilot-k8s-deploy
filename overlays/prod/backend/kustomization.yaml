@@ -6,4 +6,4 @@ resources:
 
 images:
   - name: vkflco08/devpilot # base/backend/deployment.yaml에 있는 이미지 이름
-    newTag: build-40-20250808095651
+    newTag: build-41-20250808101916
